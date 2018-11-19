@@ -146,6 +146,13 @@ sub mixin {
 
     $self;
 }
+sub append {
+    my ($self,$filename) = @_;
+    prPage();
+    prDoc($filename);
+    
+    $self;
+}
 
 sub new {
     my ( $class, $filename ) = @_;
